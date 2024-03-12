@@ -2,11 +2,6 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 import os
-import scipy
-from scipy import stats
-from sklearn import linear_model 
-from sklearn.linear_model import LinearRegression
-import matplotlib as plt
 import matplotlib.pyplot as pltt
 import warnings
 import xgboost as xgb
@@ -16,7 +11,6 @@ import seaborn as sn
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
-import matplotlib.pyplot as plt
 warnings.filterwarnings('ignore')
 color_pal=sn.color_palette()
 st.set_page_config(page_title="AGRIBUSINESS STORE ANALYTICS", page_icon=":bar_chart:",layout = "wide")
@@ -256,4 +250,6 @@ with st.expander("View sales model plot"):
     st.write(fig)
     error=np.sqrt(mean_squared_error(test["Sales"],test["prediction"]))
     st.write(error)
-    
+git add requirement.txt
+git commit -m "Add requirement.txt for dependencies"
+git push   
