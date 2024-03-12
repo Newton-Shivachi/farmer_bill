@@ -250,6 +250,3 @@ with st.expander("View sales model plot"):
     st.write(fig)
     error=np.sqrt(mean_squared_error(test["Sales"],test["prediction"]))
     st.write(error)
-git add requirement.txt
-git commit -m "Add requirement.txt for dependencies"
-git push   
