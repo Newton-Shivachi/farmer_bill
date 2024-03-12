@@ -1,13 +1,3 @@
-import openpyxl 
-import os
-filepath = "C:/Users/NEWTON SHIVACHI/OneDrive/Desktop/project/agribiz.xlsx"
-if not os.path.exists(filepath):
-    workbook = openpyxl.Workbook()
-    sheet = workbook.active
-    heading = ["Date","Population","National Income"]
-    sheet.append(heading)
-    workbook.save(filepath)
-    
 import streamlit as st
 import plotly.express as px
 import pandas as pd
